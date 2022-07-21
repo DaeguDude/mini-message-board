@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  form(action="/new", method="POST") 
+    h1 new message
+    label(for="author") author
+    input(type="text", name="author")
+    label(for="message") message
+    input(type="text", name="messageText")
+    input(type="submit") 
+
+
+  
+
+
+ 

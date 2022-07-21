@@ -1,0 +1,14 @@
+extends layout
+
+
+//- How do I also loop through array in pug?
+block content
+  h1= title
+  p Welcome to #{title}
+  ul 
+    each message in messages
+      li
+        h3 #{message.user}
+        p #{message.text}
+        p #{message.added}
+  
